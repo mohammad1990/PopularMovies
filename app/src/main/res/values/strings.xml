@@ -1,0 +1,61 @@
+<resources xmlns:xliff="http://schemas.android.com/apk/res/android">
+    <string name="app_name">Popular Movies</string>
+    <string name="action_settings">Settings</string>
+    <!--sitting label-->
+    <string name="title_activity_setting">Setting</string>
+    <string name="pref_label_most_popular" >Most Popular</string>
+    <string name="pref_label_highest_rated">Highest Rated</string>
+    <string name="pref_label_favoured_movie">Favoured Movie</string>
+
+    <!--value label-->
+    <string name="pref_value_most_popular" translatable="false">Most Popular</string>
+    <string name="pref_value_highest_rated" translatable="false">Highest Rated</string>
+    <string name="pref_value_favoured_movie" translatable="false">Favoured Movie</string>
+
+    <string name="change_sort">Change Sort</string>
+    <string name="pref_defult_value_highest_rated" translatable="false">Most Popular</string>
+    <string name="pref_movie_key" translatable="false">pref movie key</string>
+    <string name="title_activity_detail">Detail Activity</string>
+    <string name="sync_account_type" translatable="false">sunshine.example.com</string>
+    <string name="content_authority" translatable="false">com.android.tofi.mohammad.popularmovies</string>
+    <string name="Snotification_enable">Enable Notification</string>
+    <string name="prefs_notification_last_key" translatable="false">last_notification</string>
+    <string name="notification_content">hi I am first notification ever happened</string>
+    <string name="empty_main_activity">NO Movie Information Available</string>
+    <string name="main_activity_no_network">NO Movie Information Available. the network is not available to fetch movie data</string>
+    <string name="pref_location_status_key" translatable="false">loc-status</string>
+    <string name="empty_main_activity_location_status_server_down">NO Movie Information Available. the server is down</string>
+    <string name="empty_main_activity_location_status_server_invalid">NO Movie Information Available. the server is invalid</string>
+    <string name="empty_main_activity_location_status_server_unknown">NO Movie Information Available. the server is unknown</string>
+
+
+    <!--<info detail Activity-->
+    <!--//IntentNameForSendMovie-->
+    <string name="intent_movie_name" translatable="false">EXTRA_SESSION_ID</string>
+    <!--//IntentForShareMovie-->
+    <string name="share_movie" translatable="false">SHARE MOVIE</string>
+    <!--<info detail Fragment-->
+    <!--this is title Label of summary movie-->
+    <string name="summary_movie">Summary</string>
+    <!--this is title Label of review movie-->
+    <string name="review_movie">Review</string>
+    <!--this is title Label of video_trial_movie movie-->
+    <string name="video_trial_movie">Video Trial</string>
+    <!--width & height image in detail fragment-->
+    <string name="width_image" translatable="false">350</string>
+    <!--//MeasureOFHeightImageInMainActivity-->
+    <string name="height_image" translatable="false">400</string>
+    <string name="empty_review_trial_video">This movie do not have any trial video or review</string>
+    <!--<info Main Fragment-->
+    <!--//TypeOfMovieForRequestToAPI-->
+    <string name="url_request_most_popular" translatable="false">Most Popular</string>
+    <!--//TypeOfMovieForRequestToAPI-->
+    <string name="url_request_favoured_movie" translatable="false">Favoured Movie</string>
+    <!--//TypeOfMovieForRequestToAPI-->
+    <string name="url_request_highest_rated" translatable="false">Highest Rated</string>
+    <!--//IntentSaveUserChoose-->
+    <string name="sitting_user_choose" translatable="false">sitting choose</string>
+    <!--//SaveInstanceStateIndexGridView-->
+    <string name="position_grid_view" translatable="false">position grid view</string>
+
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:defaultValue="@string/pref_defult_value_highest_rated"
+        android:entries="@array/pre_sort_option"
+        android:entryValues="@array/pre_sort_value"
+        android:key="@string/pref_movie_key"
+        android:title="@string/change_sort"></ListPreference>
+
+    <SwitchPreference android:defaultValue="true"
+        android:key="PromoNotificationOnOff"
+        android:title="@string/Snotification_enable" />
+</PreferenceScreen>

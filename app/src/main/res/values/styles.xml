@@ -1,0 +1,59 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/sunshine_blue</item>
+        <item name="colorPrimaryDark">@color/sunshine_dark_blue</item>
+    </style>
+
+    <style name="foodRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_bar_full</item>
+        <item name="android:minHeight">31dip</item>
+        <item name="android:maxHeight">25dip</item>
+    </style>
+
+
+    <style name="ForecastTheme" parent="AppTheme">
+        <item name="actionBarStyle">@style/ActionBar.Solid.Sunshine.NoTitle</item>
+    </style>
+
+    <!-- main activity action bar styles -->
+    <style name="ActionBar.Solid.Sunshine.NoTitle" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="displayOptions">useLogo|showHome</item>
+        <item name="logo">@drawable/video_play_button</item>
+    </style>
+
+
+    <!--   <style name="mainFragment" parent="AppTheme">
+           <item name="actionBarStyle">@style/ActionBar.Solid.PapularMovie</item>
+       </style>
+
+       <style name="ActionBar.Solid.PapularMovie" parent="@style/Widget.AppCompat.Light.ActionBar">
+           <item name="displayOptions">useLogo|showHome</item>
+           <item name="logo">@drawable/movie_icon</item>
+       </style>-->
+
+    <!--    <style name="AppBaseTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+            <item name="actionBarStyle">@style/MyActionBar</item>
+        </style>
+
+        <style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar.Solid">
+            <item name="titleTextStyle">@style/MyTitleTextStyle</item>
+        </style>
+
+        <style name="MyTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+            <item name="android:textColor">#00FFFF</item>
+            <item name="titleTextStyle">@style/Widget.AppTheme.ActionBar</item>
+
+
+        </style>
+        <style name="Widget.AppTheme.ActionBar" parent="Widget.AppCompat.Light.ActionButton.Overflow">
+            &lt;!&ndash; action bar background &ndash;&gt;
+            &lt;!&ndash;<item name="android:background">#00FFFF</item>&ndash;&gt;
+            <item name="android:itemBackground">#00FFFF</item>
+            &lt;!&ndash; action bar elevation &ndash;&gt;
+            <item name="elevation">6dp</item>
+
+        </style>-->
+
+</resources>

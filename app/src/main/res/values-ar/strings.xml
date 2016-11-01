@@ -1,0 +1,26 @@
+<resources xmlns:xliff="http://schemas.android.com/apk/res/android">
+    <string name="action_settings">الإعدادات</string>
+    <!--sitting label-->
+    <string name="title_activity_setting">الإعدادات</string>
+    <string name="pref_label_most_popular" >الأفلام الأكثر مشاهده</string>
+    <string name="pref_label_highest_rated">الأفلام الأعلى تقيم</string>
+    <string name="pref_label_favoured_movie">الأفلام المفضلة</string>
+    <string name="title_activity_detail">التفاصيل</string>
+    <string name="Snotification_enable">تفعيل االتنبيه</string>
+
+    <string name="notification_content">هناك تنبيه قادم</string>
+    <string name="empty_main_activity">لايوجد مغلومات متاحه </string>
+    <string name="main_activity_no_network">لايوجد معلومات عن الأفلام الأن أنت تحتاج إلى تفعيل خدمة الأنترنت</string>
+    <string name="empty_main_activity_location_status_server_down">NO Movie Information Available. the server is down</string>
+    <string name="empty_main_activity_location_status_server_invalid">NO Movie Information Available. the server is invalid</string>
+    <string name="empty_main_activity_location_status_server_unknown">NO Movie Information Available. the server is unknown</string>
+    <string name="summary_movie">ملخص</string>
+    <!--this is title Label of review movie-->
+    <string name="review_movie">مشاهدات</string>
+    <!--this is title Label of video_trial_movie movie-->
+    <string name="video_trial_movie">فديوا تجريبي</string>
+    <string name="empty_review_trial_video">هذا الفلم لا يحتوي على مشاهدة ولا على فديو تجيربي</string>
+    <string name="change_sort">تغير الترتيب</string>
+
+
+</resources>

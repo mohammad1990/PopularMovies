@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pre_sort_option">
+        <item>@string/pref_label_most_popular</item>
+        <item>@string/pref_label_highest_rated</item>
+        <item>@string/pref_label_favoured_movie</item>
+    </string-array>
+
+    <string-array name="pre_sort_value">
+        <item>@string/pref_value_most_popular</item>
+        <item>@string/pref_value_highest_rated</item>
+        <item>@string/pref_value_favoured_movie</item>
+    </string-array>
+
+</resources>

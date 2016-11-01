@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.tofi.mohammad.popularmovies">
+
+    <uses-sdk android:minSdkVersion="11"></uses-sdk>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+
+    <!--Permission for access to internet-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:name="MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/movie_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:supportsRtl="true">
+        <!--Event for notification me when internet is coming-->
+       <!-- <receiver android:name=".MainFragment$InternetReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>-->
+        <!--This main activity-->
+        <activity
+            android:name=".MainActivity"
+
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--Setting Activity-->
+        <activity
+            android:name=".SettingActivity"
+            android:label="@string/title_activity_setting"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="parentActivityName"
+                android:value="MainActivity" />
+        </activity>
+        <!--Detail Activity-->
+        <activity
+            android:name=".DetailActivity"
+            android:label="@string/title_activity_detail"
+            android:theme="@style/ForecastTheme" />
+        <provider
+            android:name="com.android.tofi.mohammad.popularmovies.MovieProvider"
+            android:authorities="com.android.tofi.mohammad.popularmovies"
+            android:exported="false"
+            android:syncable="true"></provider>
+        <!-- SyncAdapter's dummy authentication service -->
+        <service android:name=".sync.PopularMovieAuthenticatorService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </service>
+        <service
+            android:name=".sync.PopularMovieSyncService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/syncadapter" />
+        </service>
+
+    </application>
+
+
+</manifest>
